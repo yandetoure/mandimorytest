@@ -1,0 +1,58 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="logo">
+      <img src="assets/img/logo.png" height="50" width="150" alt="logo">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+      <ion-menu contentId="main-content">
+        <ion-header>
+          <ion-toolbar class="menu">
+          </ion-toolbar>
+        </ion-header>
+        <ion-content class="ion-padding">
+          <ul>
+            <li>
+              <a href="">Mon Profil</a>
+            </li>
+            <li>
+              <a href="">Mes Favoris</a>
+            </li>
+            <li>
+              <a href="">Mes Commandes</a>
+            </li>
+            <li>
+
+            </li>
+          </ul>
+        </ion-content>
+      </ion-menu>
+      <div class="ion-page" id="main-content">
+        <ion-header>
+          <ion-toolbar>
+            <ion-buttons slot="start">
+              <ion-menu-button></ion-menu-button>
+            </ion-buttons>
+            <ion-title>Menu</ion-title>
+          </ion-toolbar>
+        </ion-header>
+      </div>
+
+      <div class="body-content">
+        <div class="presentation">
+<swiper-container (slidechange)="onSlideChange()">
+  <swiper-slide>Slide 1</swiper-slide>
+  <swiper-slide>Slide 2</swiper-slide>
+  <swiper-slide>Slide 3</swiper-slide>
+</swiper-container>
+        </div>
+        <div class="categories">
+          <ion-item>
+            <img src="assets/img/8.jpeg" alt="" class="image-mode" height="80" width="80">
+            <p>Mode Femme</p>
+          </ion-item>
+        </div>
+
+      </div>
+
+</ion-content>
